@@ -253,6 +253,7 @@ function uiLib:Window(Header, ToggleKey)
         SectionContainer.Size = UDim2.new(0.616991639, 0, 0.6592592, 0)
         SectionContainer.CanvasSize = UDim2.new(0, 0, 0, 0)
         SectionContainer.ScrollBarThickness = 6
+        SectionContainer.Visible = false
 
         UIListLayout_2.Parent = SectionContainer
         UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
