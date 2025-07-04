@@ -98,7 +98,8 @@ Section1:TextBox("Say something..", function(value)
 end)
 
 Section2:TextBox("WalkSpeed", function(value)
-    game:GetService("Players").LocalPlayer.Character.WalkSpeed = tonumber(value)
+    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(value)
 end)
+
 
 ```
