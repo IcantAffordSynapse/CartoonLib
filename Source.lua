@@ -280,7 +280,7 @@ function uiLib:Window(Header, ToggleKey)
                 btn:TweenSize(UDim2.new(0.929, 0, 0.157, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.1, true)
             end)
             btn.MouseButton1Click:Connect(function()
-                script.click:Play()
+                --script.click:Play()
             end)
             
         end
