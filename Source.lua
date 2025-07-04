@@ -22,7 +22,7 @@
  \$$$$$$$$ \$$$$$$ \$$$$$$$                                          
 
     >> Feel free to mess around with the code, add stuff, remove stuff make it your own.
-    >> Credit would be cool but you do you.
+    >> Credit would be cool but you do you
 ]]
 
 local uiLib = {}
@@ -320,7 +320,7 @@ function uiLib:Window(Header, ToggleKey)
             ButtonLabel.TextWrapped = true
             ButtonLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-            ButtonInstance.MouseButton1Click:Connect(Callback)
+            ButtonInstance.MouseButton1Click:Connect(pcall(Callback()))
 
             local function FOVPQU_fake_script() -- ButtonInstance.LocalScript 
                 local script = Instance.new('LocalScript', ButtonInstance)
@@ -411,7 +411,7 @@ function uiLib:Window(Header, ToggleKey)
                     btn:TweenSize(UDim2.new(0.966, 0, 0.206, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.1, true)
                 end)
                 btn.MouseButton1Click:Connect(function()
-                    script.click:Play()
+                    -- script.click:Play()
                 end)
                 
             end
@@ -428,7 +428,7 @@ function uiLib:Window(Header, ToggleKey)
                     ToggleOff.Visible = false
                 end
 
-                Callback(toggle)
+                pcall(Callback(toggle))
             end)
         end
 
@@ -516,7 +516,7 @@ function uiLib:Window(Header, ToggleKey)
             coroutine.wrap(EPGO_fake_script)()
 
             TextBoxInput.FocusLost:Connect(function()
-                callback(TextBoxInput.Text)
+                pcall(callback(TextBoxInput.Text))
             end)
         end
         return Elements
