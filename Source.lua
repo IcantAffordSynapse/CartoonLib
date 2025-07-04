@@ -320,7 +320,9 @@ function uiLib:Window(Header, ToggleKey)
             ButtonLabel.TextWrapped = true
             ButtonLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-            ButtonInstance.MouseButton1Click:Connect(pcall(Callback()))
+            ButtonInstance.MouseButton1Click:Connect(function()
+                pcall(Callback)
+            end)
 
             local function FOVPQU_fake_script() -- ButtonInstance.LocalScript 
                 local script = Instance.new('LocalScript', ButtonInstance)
