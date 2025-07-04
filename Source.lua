@@ -463,7 +463,7 @@ function uiLib:Window(Header, ToggleKey)
             TextBoxLabel.Position = UDim2.new(0.42899999, 0, 0.340000004, 0)
             TextBoxLabel.Size = UDim2.new(0.761682272, 0, 0.367647052, 0)
             TextBoxLabel.Font = Enum.Font.FredokaOne
-            TextBoxLabel.Text = "TextBox Name"
+            TextBoxLabel.Text = Title
             TextBoxLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
             TextBoxLabel.TextScaled = true
             TextBoxLabel.TextSize = 14.000
