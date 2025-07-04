@@ -313,7 +313,7 @@ function uiLib:Window(Header, ToggleKey)
             ButtonLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
             ButtonLabel.Size = UDim2.new(0.871495306, 0, 0.581818163, 0)
             ButtonLabel.Font = Enum.Font.FredokaOne
-            ButtonLabel.Text = "Button Name"
+            ButtonLabel.Text = Title
             ButtonLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
             ButtonLabel.TextScaled = true
             ButtonLabel.TextSize = 14.000
